@@ -1,2 +1,2 @@
-# cynusweeb.github.io
+# CynusWeeb.github.io
 My somewhat official site
