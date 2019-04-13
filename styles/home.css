@@ -173,6 +173,7 @@ div#kyoku-text::after {
         text-align: center;
         writing-mode: tb-rl;
         text-orientation: upright;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
     }
 
     div#kyoku-text::after {
@@ -186,6 +187,44 @@ div#kyoku-text::after {
 
         to {
             height: 180px;
+        }
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    img#kyoku-avatar {
+        z-index: 1;
+        width: 150px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    div#kyoku-text {
+        z-index: 2;
+        width: 90px;
+        height: 30px;
+        position: relative;
+        top: -35px;
+        left: 0;
+        padding: 0 12px 0 12px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    div#kyoku-text::after {
+        visibility: hidden;
+    }
+
+    @keyframes intro-banner {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 90px;
         }
     }
 }
