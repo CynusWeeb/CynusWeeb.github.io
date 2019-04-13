@@ -191,7 +191,7 @@ div#kyoku-text::after {
     }
 }
 
-@media only screen and (max-height: 300px) {
+@media only screen and (max-height: 350px) {
     img#kyoku-avatar {
         z-index: 1;
         width: 150px;
