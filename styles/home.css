@@ -1,5 +1,6 @@
 
 body {
+    background: #00ADDD;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -38,12 +39,12 @@ nav {
 
 nav > a {
     display: table;
-    background: #00EFFF;
+    background: #00DFFF;
     height: 38px;
     width: 80px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 2px #00FFFF solid;
+    border: 2px #00BEEE solid;
     box-shadow: 0 -1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,7 +83,7 @@ main {
 
 img#kyoku-avatar {
     z-index: 2;
-    border: 2px white solid;
+    border: 3px #00BEEE solid;
     border-radius: 50%;
     box-shadow: 0 -2px 5px 3px rgba(0, 0, 0, 0.1);
 }
@@ -93,7 +94,7 @@ div#kyoku-text {
     width: 180px;
     padding-left: 20px;
     position: relative;
-    left: -5px;
+    left: -8px;
     color: white;
     font-family: Play, sans-serif;
     font-size: 40px;
