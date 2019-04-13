@@ -191,10 +191,12 @@ div#kyoku-text::after {
     }
 }
 
-@media only screen and (max-height: 350px) {
+@media only screen and (max-height: 400px) {
     img#kyoku-avatar {
         z-index: 1;
         width: 150px;
+        position: relative;
+        top: 16px;
     }
 
     main {
@@ -206,7 +208,7 @@ div#kyoku-text::after {
         width: 90px;
         height: 30px;
         position: relative;
-        top: -35px;
+        top: -17px;
         left: 0;
         padding: 0 12px 0 12px;
         text-align: center;
