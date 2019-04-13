@@ -140,7 +140,13 @@ div#kyoku-text::after {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+    and (min-width: 501px)
+    and (max-width: 600px) {
+    * {
+        transform: scale(0.9);
+    }
+
     img#kyoku-avatar {
         width: 150px;
     }
@@ -191,7 +197,7 @@ div#kyoku-text::after {
     }
 }
 
-@media only screen and (max-height: 400px) {
+/* @media only screen and (max-height: 400px) {
     img#kyoku-avatar {
         z-index: 1;
         width: 150px;
@@ -229,7 +235,7 @@ div#kyoku-text::after {
             width: 90px;
         }
     }
-}
+} */
 
 /* div#invite-button {
     display: table;
