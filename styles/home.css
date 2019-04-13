@@ -43,8 +43,7 @@ nav > a {
     width: 80px;
     margin-left: 10px;
     margin-right: 10px;
-    border-left: 2px #00FFFF solid;
-    border-right: 2px #00FFFF solid;
+    border: 2px #00FFFF solid;
     box-shadow: 0 -1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,6 +99,8 @@ div#kyoku-text {
     font-size: 40px;
     text-align: left;
     line-height: 60px;
+    border: 3px #00BEEE solid;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     animation-duration: 1s;
     animation-name: intro-banner;
 }
@@ -112,7 +113,7 @@ div#kyoku-text::after {
     height: 50px;
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -25px;
     transform: rotate(45deg);
     border: 5px #DDDD00 solid;
     border-radius: 10px;
