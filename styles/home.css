@@ -32,7 +32,7 @@ nav {
     font-size: 20px;
     font-family: Cinzel, serif;
     font-weight: bold;
-    margin: 8px 0 8px 0;
+    margin: 10px 0 10px 0;
     box-shadow: 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,6 +100,8 @@ div#kyoku-text {
     font-size: 40px;
     text-align: left;
     line-height: 60px;
+    animation-duration: 1s;
+    animation-name: intro-banner;
 }
 
 div#kyoku-text::after {
@@ -109,11 +111,22 @@ div#kyoku-text::after {
     width: 50px;
     height: 50px;
     position: absolute;
+    top: 0;
     right: -20px;
     transform: rotate(45deg);
     border: 5px #DDDD00 solid;
     border-radius: 10px;
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes intro-banner {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 180px;
+    }
 }
 
 /* div#invite-button {
