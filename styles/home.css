@@ -142,14 +142,53 @@ div#kyoku-text::after {
 
 @media only screen 
     and (min-width: 501px)
-    and (max-width: 600px) {
-    * {
-        transform: scale(0.9);
-    }
+    and (max-width: 700px) {
+        img#kyoku-avatar {
+            z-index: 1;
+            width: 200px;
+            position: relative;
+            top: 16px;
+        }
 
-    img#kyoku-avatar {
-        width: 150px;
-    }
+        main {
+            flex-direction: column;
+        }
+
+        div#kyoku-text {
+            z-index: 2;
+            width: 90px;
+            height: 30px;
+            position: relative;
+            top: -17px;
+            left: 0;
+            padding: 0 12px 0 12px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 25px;
+        }
+
+        div#kyoku-text::after {
+            visibility: hidden;
+        }
+
+        @keyframes intro-banner {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 90px;
+            }
+        }
+}
+
+@media only screen
+    and (min-width: 501px)
+    and (max-width: 700px)
+    and (max-height: 500px) {
+        img#kyoku-avatar {
+            width: 150px;
+        }
 }
 
 @media only screen and (max-width: 500px) {
