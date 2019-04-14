@@ -188,10 +188,6 @@ div#kyoku-text::after {
         img#kyoku-avatar {
             width: 150px;
         }
-
-        main {
-            margin: 0;
-        }
 }
 
 @media only screen
